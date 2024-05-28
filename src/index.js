@@ -1,15 +1,23 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from "react-dom/client";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import StartScreen from './components/StartScreen';
+import InitialScreening from './components/InitialScreening';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = createRoot(document.getElementById("root"));
+
 root.render(
-  <React.StrictMode>
-    <StartScreen />
-  </React.StrictMode>
+  <BrowserRouter>
+    <React.StrictMode>
+      <Routes>
+        <Route exact path= "/" Component={StartScreen} />
+        <Route exact path= "/screening" Component={InitialScreening} />
+      </Routes>
+    </React.StrictMode>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
