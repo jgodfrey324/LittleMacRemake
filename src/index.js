@@ -7,6 +7,7 @@ import reportWebVitals from './reportWebVitals';
 import StartScreen from './components/StartScreen';
 import EnterWeight from './components/EnterWeight';
 import ChoosePlanet from './components/ChoosePlanet';
+import ChooseFighter from './components/ChooseFighter';
 
 const root = createRoot(document.getElementById("root"));
 
@@ -17,6 +18,7 @@ root.render(
         <Route exact path= "/" Component={StartScreen} />
         <Route exact path= "/enter-weight" Component={EnterWeight} />
         <Route exact path= "/choose-planet" Component={ChoosePlanet} />
+        <Route exact path= "/choose-fighter" Component={ChooseFighter} />
       </Routes>
     </React.StrictMode>
   </BrowserRouter>
