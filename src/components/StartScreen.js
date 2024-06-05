@@ -11,7 +11,7 @@ function StartScreen() {
                 Welcome to a Little Mac remake.
             </p>
             <button className='btn btn-secondary mt-4'
-            onClick={() => navigate('/screening')}>
+            onClick={() => navigate('/enter-weight')}>
                 Start your journey
             </button>
         </div>

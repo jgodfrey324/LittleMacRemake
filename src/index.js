@@ -5,7 +5,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import StartScreen from './components/StartScreen';
-import InitialScreening from './components/InitialScreening';
+import EnterWeight from './components/EnterWeight';
+import ChoosePlanet from './components/ChoosePlanet';
 
 const root = createRoot(document.getElementById("root"));
 
@@ -14,7 +15,8 @@ root.render(
     <React.StrictMode>
       <Routes>
         <Route exact path= "/" Component={StartScreen} />
-        <Route exact path= "/screening" Component={InitialScreening} />
+        <Route exact path= "/enter-weight" Component={EnterWeight} />
+        <Route exact path= "/choose-planet" Component={ChoosePlanet} />
       </Routes>
     </React.StrictMode>
   </BrowserRouter>
